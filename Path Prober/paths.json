@@ -1,0 +1,33 @@
+{
+  "probe_url": "https://speed.cloudflare.com/__down?bytes=104857600",
+  "wireguard": [
+    {
+      "id": "wg-eu-1",
+      "name": "WG Europe 1",
+      "interface": "wg0",
+      "endpoint": "203.0.113.10:51820"
+    },
+    {
+      "id": "wg-us-1",
+      "name": "WG US 1",
+      "interface": "wg1",
+      "endpoint": "198.51.100.20:51820"
+    }
+  ],
+  "proxy": [
+    {
+      "id": "http-eu-1",
+      "name": "HTTP EU 1",
+      "type": "http",
+      "host": "127.0.0.1",
+      "port": 8080
+    },
+    {
+      "id": "socks5-eu-1",
+      "name": "SOCKS5 EU 1",
+      "type": "socks5",
+      "host": "127.0.0.1",
+      "port": 1080
+    }
+  ]
+}
